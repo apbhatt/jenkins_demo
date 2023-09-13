@@ -7,6 +7,7 @@ pipeline {
                 // Checkout the source code from your version control system (e.g., Git)
                 // You may need to configure credentials for authentication
                 //checkout scm
+                sh 'echo "step 1"'
             }
         }
         
@@ -15,6 +16,7 @@ pipeline {
                 // Compile and package your Java application
                 //sh 'javac -version'
                 //sh 'mvn clean package'
+                sh 'echo "step 2"'
             }
         }
         
@@ -22,6 +24,7 @@ pipeline {
             steps {
                 // Run tests on your application
                 //sh 'mvn test'
+                sh 'echo "step 3"'
             }
         }
         
