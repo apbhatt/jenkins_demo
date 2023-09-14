@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Checkout the source code from your version control system (e.g., Git)
                 // You may need to configure credentials for authentication
-                //checkout scm
+                checkout scm
                 sh 'echo "step 1"'
             }
         }
